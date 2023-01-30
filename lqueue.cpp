@@ -119,7 +119,6 @@ int lq_send (lqd_t __msgid, const char *__msg, size_t __msg_len, unsigned int __
 ssize_t lq_receive (lqd_t __msgid, char *__msg, size_t __msg_len, unsigned int *__msg_prio)
 {
 	ssize_t len = 0;
-	
 	if(lqueue_table[__msgid].lq_name[0] == 0)					// if msg_id is invalid, signal an error
 		return -1;
 

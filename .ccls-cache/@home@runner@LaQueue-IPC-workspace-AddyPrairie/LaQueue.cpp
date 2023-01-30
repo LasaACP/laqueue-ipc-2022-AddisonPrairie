@@ -40,6 +40,45 @@ public:
 
 int main() {
 
+  /*PQueue* testQ = new PQueue();
+  
+  
+  char test = 'a';
+  
+  std::cout << "test " << &test << std::endl;
+  char test2 = 'b';
+  std::cout << "test2 " << &test2 << std::endl;
+
+  /*char* val = (char*)testQ->top();
+
+  std::cout << val << std::endl;
+  testQ->pop();
+
+  testQ->push(val, 2);
+
+  testQ->print();
+
+  for (int i = 0; i < 19; i++) {
+    testQ->push(&test, i);
+    testQ->print();
+  }
+
+  testQ->pop();
+  testQ->print();
+  testQ->pop();
+  testQ->print();
+
+  testQ->push(&test, -1);
+  testQ->print();
+  testQ->push(&test, -2);
+  testQ->print();
+
+  perror("done");
+
+  testQ->display();
+
+  return 0;*/
+
   // Array that will hold thread id's created by the system
   pthread_t threads[NUM_THREADS];
   // information to be passed into the thread when created.

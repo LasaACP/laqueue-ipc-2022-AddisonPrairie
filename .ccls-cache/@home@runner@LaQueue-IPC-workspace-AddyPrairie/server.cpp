@@ -80,12 +80,13 @@ void *server_main (void *threadarg)
 	{
 		
 		usleep(1000);			// put a little load on the system so our queue code can process things
-		
+		    
         // get the oldest message with highest priority
         if ((outLen = lq_receive (qd_server, in_buffer, MSG_BUFFER_SIZE, NULL)) == -1) {
             perror ("Server: lq_receive");
         }
 
+    
 		//If there was data then process it.
 		if (outLen > 0)
 		{

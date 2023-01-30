@@ -117,7 +117,6 @@ void *client_main (void *threadarg)
 			printf ("Client: Token received from server: %s\n", in_buffer);
 		
 		i++;
-
     }
 	// Wrap up the quewue
 	if (lq_unlink (client_queue_name) == -1) {
